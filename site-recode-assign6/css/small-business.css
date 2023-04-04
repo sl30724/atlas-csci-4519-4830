@@ -6,3 +6,27 @@
 body {
   padding-top: 56px;
 }
+
+a:focus, a:active {
+  outline-width: 1px;
+  outline-color: blue;
+  background-color: red;
+  color: white;
+}
+
+#skip a {
+position: absolute;
+left: -2000px;
+top: 0;
+width: 1px;
+height: 1px;
+overflow: hidden;
+z-index: 1;
+}
+
+#skip a:focus {
+  position: static;
+  top: 0;
+  width: auto;
+  height: auto;
+}
